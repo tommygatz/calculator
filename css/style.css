@@ -1,0 +1,52 @@
+@font-face {
+  font-family: 'Orbitron';
+  src: url('https://fonts.googleapis.com/css?family=Orbitron');
+}
+
+h1 {
+  font-size: 50px;
+  color: black;
+  text-align: center;
+}
+
+#answer {
+  color: green;
+  font-size: 20px;
+}
+
+.label {
+  color: black;
+}
+
+.center {
+  text-align: center;
+  margin: auto;
+  padding: auto;
+
+}
+
+#base {
+  min-width: 300px;
+  max-width: 400px;
+  height: 500px;
+  background-color: gray;
+  border: 2px solid black;
+  border-radius: 25px;
+  position: relative;
+  top: 10px; left: auto; margin: auto;
+  padding: 20px;
+}
+
+#display {
+  min-width: 200px;
+  max-width: 90%;
+  height: 50px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 15px;
+  position: relative;
+  top: 10px; left: auto; margin: auto;
+  padding: 10px;
+  font-family: 'Orbitron';
+}
+
