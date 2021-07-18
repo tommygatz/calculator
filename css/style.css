@@ -1,3 +1,9 @@
+body {
+  background-image: url('../assets/background.png');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 h1 {
   font-size: 50px;
   color: black;
@@ -5,26 +11,21 @@ h1 {
   font-family: 'Orbitron';
 }
 
-#answer {
-  color: green;
-  font-size: 20px;
-}
-
 .label {
   color: black;
 }
 
 .center {
+  display: block;
   text-align: center;
-  margin: auto;
-  padding: auto;
+  margin: 10px;
 
 }
 
 #base {
   min-width: 300px;
-  max-width: 400px;
-  height: 500px;
+  max-width: 350px;
+  height: 400px;
   background-color: gray;
   border: 2px solid black;
   border-radius: 25px;
@@ -41,17 +42,40 @@ h1 {
   border: 2px solid black;
   border-radius: 15px;
   position: relative;
-  top: 10px; left: auto; margin: auto;
+  top: 10px; left: auto; margin: auto 10px;
   padding: 10px;
   font-family: 'Orbitron';
+  font-size: 25px;
+}
+
+button {
+  position: relative;
+  display: inline-block;
+  margin: 10px 15px;
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  border-color: ;
+  outline: none;
+  color: black;
+  font-family: 'Orbitron';
+  font-weight: bold;
+}
+
+button:active {
+  border-style: inset;
+}
+
+#buttons1 {
+  margin-top: 20px;
 }
 
 #homelink {
   color: black;
   text-decoration: none;
+  font-family: 'Orbitron';
 }
 
 #homelink:hover{
-  color: black;
   text-decoration: line-through;
 }
