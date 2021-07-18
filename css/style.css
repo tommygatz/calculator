@@ -1,12 +1,8 @@
-@font-face {
-  font-family: 'Orbitron';
-  src: url('https://fonts.googleapis.com/css?family=Orbitron');
-}
-
 h1 {
   font-size: 50px;
   color: black;
   text-align: center;
+  font-family: 'Orbitron';
 }
 
 #answer {
@@ -50,3 +46,12 @@ h1 {
   font-family: 'Orbitron';
 }
 
+#homelink {
+  color: black;
+  text-decoration: none;
+}
+
+#homelink:hover{
+  color: black;
+  text-decoration: line-through;
+}
