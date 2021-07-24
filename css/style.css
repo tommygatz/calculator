@@ -23,7 +23,7 @@ h1 {
 }
 
 #base {
-  display: inline-block;
+  display: block;
   width: 400px;
   height: 505px;
   background-color: gray;
