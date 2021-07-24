@@ -23,51 +23,62 @@ h1 {
 }
 
 #base {
-  min-width: 300px;
-  max-width: 350px;
-  height: 400px;
+  display: inline-block;
+  width: 400px;
+  height: 505px;
   background-color: gray;
-  border: 2px solid black;
-  border-radius: 25px;
-  position: relative;
-  top: 10px; left: auto; margin: auto;
-  padding: 20px;
-}
-
-#display {
-  min-width: 200px;
-  max-width: 90%;
-  height: 50px;
-  background-color: white;
+  box-sizing: border-box;
   border: 2px solid black;
   border-radius: 15px;
   position: relative;
-  top: 10px; left: auto; margin: auto 10px;
-  padding: 10px;
-  font-family: 'Orbitron';
-  font-size: 25px;
+  top: 10px; left: auto; margin: auto;
 }
 
-button {
-  position: relative;
-  display: inline-block;
-  margin: 10px 15px;
-  width: 60px;
-  height: 60px;
+#display {
+  display: inherit;
+  width: 350px;
+  height: 80px;
+  background-color: white;
+  box-sizing: border-box;
+  border: 2px solid black;
   border-radius: 10px;
-  border-color: ;
+  position: relative;
+  left: 25px;
+  right: 25px;
+  top: 25px;
+  font-family: 'Orbitron';
+  font-size: 30px;
+}
+
+.button {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  box-sizing: border-box;
+  border-radius: 10px;
   outline: none;
   color: black;
   font-family: 'Orbitron';
   font-weight: bold;
+  font-size: 24px;
 }
 
 button:active {
   border-style: inset;
 }
 
-#buttons1 {
-  margin-top: 20px;
+.btnRow1 {
+  margin-top: 45px;
+}
+.btnRow2, .btnRow3, .btnRow4 {
+  margin-top: 10px;
+}
+
+.btnCol1 {
+  margin-left: 25px;
+}
+.btnCol2, .btnCol3, .btnCol4 {
+  margin-left: 5px;
 }
 
 #homelink {
