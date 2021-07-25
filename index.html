@@ -7,37 +7,42 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
     <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript">
+      window.onload = function() {
+        updateDisplay(display);
+      }
+    </script>
   </head>
   <body>
     <!-- <a id="homelink" href="https://tommygatz.github.io/">Home</a> -->
     <h1>Calculator</h1>
-
+    <button type="button" id="clearBtn" class="button" onclick="clearScreen()">Clear</button>
     <div id="base">
       <div id="display">
-        <span id="displayText" class="center">Display</span>
+        <span id="displayText" class="rightJust"></span>
       </div>
       <div class="btnRow1">
         <button type="button" id="btn7" class="button btnCol1" onclick="sendVal(7)" >7</button>
         <button type="button" id="btn8" class="button btnCol2" onclick="sendVal(8)">8</button>
         <button type="button" id="btn9" class="button btnCol3" onclick="sendVal(9)">9</button>
-        <button type="button" id="btndiv" class="button btnCol4" onclick="sendVal('/')">/</button>
+        <button type="button" id="btndiv" class="button btnCol4" onclick="setOperator('/')">/</button>
       </div>
       <div class="btnRow2">
         <button type="button" id="btn4" class="button btnCol1" onclick="sendVal(4)">4</button>
         <button type="button" id="btn5" class="button btnCol2" onclick="sendVal(5)">5</button>
         <button type="button" id="btn6" class="button btnCol3" onclick="sendVal(6)">6</button>
-        <button type="button" id="btnmul" class="button btnCol4" onclick="sendVal('x')">X</button>
+        <button type="button" id="btnmul" class="button btnCol4" onclick="setOperator('x')">X</button>
       </div>
       <div class="btnRow3">
         <button type="button" id="btn1" class="button btnCol1" onclick="sendVal(1)">1</button>
         <button type="button" id="btn2" class="button btnCol2" onclick="sendVal(2)">2</button>
         <button type="button" id="btn3" class="button btnCol3" onclick="sendVal(3)">3</button>
-        <button type="button" id="btnmin" class="button btnCol4" onclick="sendVal('-')">-</button>
+        <button type="button" id="btnmin" class="button btnCol4" onclick="setOperator('-')">-</button>
       </div>
       <div class="btnRow4">
-        <button type="button" id="btndec" class="button btnCol1" onclick="sendVal('.')">.</button>
+        <button type="button" id="btndec" class="button btnCol1" onclick="decimal('.')">.</button>
         <button type="button" id="btn0" class="button btnCol2" onclick="sendVal(0)">0</button>
-        <button type="button" id="btneq" class="button btnCol3" onclick="sendVal('=')">=</button>
+        <button type="button" id="btneq" class="button btnCol3" onclick="equals()">=</button>
         <button type="button" id="btnpls" class="button btnCol4" onclick="sendVal(7)">+</button>
       </div>
     </div>
