@@ -16,10 +16,11 @@ h1 {
 }
 
 .center {
-  display: block;
+  display: inline-flex;
+  vertical-align: middle;
   text-align: center;
-  margin: 10px;
-
+  color: black;
+  margin: auto;
 }
 
 #base {
@@ -27,7 +28,6 @@ h1 {
   width: 400px;
   height: 505px;
   background-color: gray;
-  box-sizing: border-box;
   border: 2px solid black;
   border-radius: 15px;
   position: relative;
@@ -35,7 +35,7 @@ h1 {
 }
 
 #display {
-  display: inherit;
+  display: inline-flex;
   width: 350px;
   height: 80px;
   background-color: white;
@@ -44,13 +44,13 @@ h1 {
   border-radius: 10px;
   position: relative;
   left: 25px;
-  right: 25px;
   top: 25px;
   font-family: 'Orbitron';
   font-size: 30px;
 }
 
 .button {
+  display: inline-flexbox;
   position: relative;
   width: 80px;
   height: 80px;
@@ -73,7 +73,6 @@ button:active {
 .btnRow2, .btnRow3, .btnRow4 {
   margin-top: 10px;
 }
-
 .btnCol1 {
   margin-left: 25px;
 }
