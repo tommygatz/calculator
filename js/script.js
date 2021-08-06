@@ -69,3 +69,17 @@ function equals(){
       break;
   }
 }
+
+function getLen(a){
+  return a.toString().length;
+}
+
+function checkLen(a){
+  var test = getLen(a);
+  if (test > 11){
+    return true;
+  }
+  else {
+    return false;
+  }
+}
