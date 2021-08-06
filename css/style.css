@@ -2,6 +2,7 @@ body {
   background-image: url('../assets/background.png');
   background-size: cover;
   background-attachment: fixed;
+  height: auto;
 }
 
 h1 {
@@ -18,7 +19,7 @@ h1 {
 .rightJust {
   display: inline-flex;
   position: absolute;
-  top: 20px;
+  top: 15px;
   right: 0px;
   color: black;
   margin-top: auto;
@@ -52,7 +53,7 @@ h1 {
   left: 25px;
   top: 25px;
   font-family: 'Orbitron';
-  font-size: 30px;
+  font-size: 36px;
   padding: 10px;
 }
 
@@ -74,7 +75,7 @@ h1 {
   color: black;
   font-family: 'Orbitron';
   font-weight: bold;
-  font-size: 24px;
+  font-size: 26px;
 }
 
 button:active {
@@ -103,3 +104,21 @@ button:active {
 #homelink:hover{
   text-decoration: line-through;
 }
+
+#notesBox {
+  position: relative;
+  top: 30px;
+  margin: auto;
+  border: 1px solid black;
+  width: 400px;
+  height: auto;
+  padding: 10px;
+}
+
+#notesHeader {
+  position: relative;
+  top: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
