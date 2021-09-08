@@ -93,6 +93,5 @@ function equals(){
         console.log('operation cleared.');
     }
     values = [,,];
-    // displayValue = 0;
     console.log(values);
 }
