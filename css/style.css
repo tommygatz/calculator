@@ -30,7 +30,7 @@ h1 {
 #base {
   display: block;
   width: 400px;
-  height: 505px;
+  height: auto;
   background-color: rgb(160, 160, 160);
   border: 2px solid black;
   border-radius: 15px;
@@ -38,6 +38,7 @@ h1 {
   top: 10px; 
   left: auto; 
   margin: auto;
+  padding-bottom: 25px;
 }
 
 #display {
@@ -58,9 +59,12 @@ h1 {
 }
 
 #clearBtn {
-  position: fixed;
-  top: 10px;
-  right: 10px;
+  position: relative;
+  width: 350px;
+  height: 50px;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 30px;
   font-size: 15px;
 }
 
@@ -83,7 +87,7 @@ button:active {
 }
 
 .btnRow1 {
-  margin-top: 45px;
+  margin-top: 10px;
 }
 .btnRow2, .btnRow3, .btnRow4 {
   margin-top: 10px;
@@ -122,3 +126,6 @@ button:active {
   margin-bottom: 0px;
 }
 
+#btndec {
+  visibility: hidden;
+}

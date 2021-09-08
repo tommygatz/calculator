@@ -3,15 +3,12 @@
 function add(var1, var2) {
     return var1 + var2;
 }
-
 function sub(var1, var2) {
     return var1 - var2;
 }
-
 function mul(var1, var2) {
     return var1 * var2;
 }
-
 function div(var1, var2) {
     return var1 / var2;
 }
@@ -70,7 +67,6 @@ function updateDisplay(input){
     document.getElementById("displayText").innerHTML = result;
 }
 
-
 function operation(operator){
     if ((values[0] || values[0] == 0) && values[1]){
         values[2] = displayValue;
@@ -97,6 +93,5 @@ function equals(){
         console.log('operation cleared.');
     }
     values = [,,];
-    displayValue = 0;
     console.log(values);
 }
